@@ -36,7 +36,7 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-8">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
@@ -44,65 +44,133 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
+                <div class="col-12 col-sm align-self-center">
+                    <a role="button" class="pt-2 pb-2 btn btn-block btn-sm btn-warning" href="#reserve">Reserve Table</a>
+                </div>
             </div>
         </div>
     </header>
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 flex-last">
+            <div class="col-sm-4 col-md-2 order-2">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col-sm col-md flex-first">
-                <h2>Uthappizza <span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                
+            <div class="col-sm col-md order-1">    
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center"
-                            src="img/uthappizza.png" alt="Uthappizza">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza</h2>
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
-                            Italian pizza, topped with Cerignola olives, ripe vine
-                            cherry tomatoes, Vidalia onion, Guntur chillies and
-                            Buffalo Paneer.</p>
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </div> 
 
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class=" d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different
-                    salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly
-                    and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of
+                            five different salads, six enticing appetizers, six main entrees and five choicest desserts.
+                            Free flowing bubbly and soft drinks. All for just $19.99 per person.
+                        </p>
+                    </div>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                    src="img/buffet.png" alt="Grand Buffet">
+                </div>
             </div>
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 flex-last">
+            <div class="col-sm-4 col-md-2 order-2">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-            <div class="col-sm col-md flex-first">
+            <div class="col-sm col-md order-1">
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center"
-                            src="img/alberto.png" alt="Alberto Somayya">
+                        src="img/alberto.png" alt="Alberto Somayya">
                     <div class="media-body">
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
                         <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
-                            International experience having worked closely with
-                            whos-who in the culinary world, he specializes in
-                            creating mouthwatering Indo-Italian fusion experiences.
-                            </p>
+                        International experience having worked closely with
+                        whos-who in the culinary world, he specializes in
+                        creating mouthwatering Indo-Italian fusion experiences.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="row row-content align-items-center justify-content-center" id="reserve">
+            <div class="col-12 col-sm-8">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form method="" action="">
+                            <div class="form-group row">
+                                <label for="guests" class="col-12 col-sm-12 col-md-2 col-form-label">Number of Guests</label>
+
+                                <div class="col-12 col-sm-12 col-md-8">
+                                    <label class="btn  active">
+                                        <input type="radio" name="guests" value="1" autocomplete="off" checked> 1
+                                    </label>
+                                    <label class="btn">
+                                        <input type="radio" name="guests" value="2" autocomplete="off"> 2
+                                    </label>
+                                    <label class="btn">
+                                        <input type="radio" name="guests" value="3" autocomplete="off"> 3
+                                    </label>
+                                    <label class="btn">
+                                        <input type="radio" name="guests" value="4" autocomplete="off"> 4
+                                    </label>
+                                    <label class="btn">
+                                        <input type="radio" name="guests" value="5" autocomplete="off"> 5
+                                    </label>
+                                    <label class="btn">
+                                        <input type="radio" name="guests" value="6" autocomplete="off"> 6
+                                    </label>
+                                </div>
+                            </div> 
+
+                            <div class="form-group row">
+                                <label for="date" class="col-12 col-sm-12 col-md-2 col-form-label">Date And Time</label>
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar fa-2x"></i>            
+                                        </div>
+                                        <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                                    </div>                                   
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-clock-o fa-2x"></i>             
+                                        </div>
+                                        <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>      
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <footer class="footer">
