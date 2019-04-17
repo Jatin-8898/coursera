@@ -60,6 +60,6 @@ address{
     left: 0;
     min-height: 300px;
 }
-input[type="radio"] {
+#nonSmoking, #smoking {
     display:none;
 }
