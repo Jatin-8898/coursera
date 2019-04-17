@@ -52,6 +52,9 @@ body {
   position: absolute;
   bottom: 0px; }
 
+#nonSmoking, #smoking {
+  display: none; }
+
 .modal-content .modal-header {
   background: #512DA8;
   color: floralwhite;
