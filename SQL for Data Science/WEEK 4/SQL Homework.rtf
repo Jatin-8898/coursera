@@ -1,0 +1,442 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red38\green38\blue38;\red255\green255\blue255;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww22680\viewh16280\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Data Scientist Role Play: Profiling and Analyzing the Yelp Dataset Coursera Worksheet\
+\
+This is a 2-part assignment. In the first part, you are asked a series of questions that will help you profile and understand the data just like a data scientist would. For this first part of the assignment, you will be assessed both on the correctness of your findings, as well as the code you used to arrive at your answer. You will be graded on how easy your code is to read, so remember to use proper formatting and comments where necessary.\
+\
+In the second part of the assignment, you are asked to come up with your own inferences and analysis of the data for a particular research question you want to answer. You will be required to prepare the dataset for the analysis you choose to do. As with the first part, you will be graded, in part, on how easy your code is to read, so use proper formatting and comments to illustrate and communicate your intent as required.\
+\
+For both parts of this assignment, use this "worksheet." It provides all the questions you are being asked, and your job will be to transfer your answers and SQL coding where indicated into this worksheet so that your peers can review your work. You should be able to use any Text Editor (Windows Notepad, Apple TextEdit, Notepad ++, Sublime Text, etc.) to copy and paste your answers. If you are going to use Word or some other page layout application, just be careful to make sure your answers and code are lined appropriately.\
+In this case, you may want to save as a PDF to ensure your formatting remains intact for you reviewer.\
+\
+\
+\
+Part 1: Yelp Dataset Profiling and Understanding\
+\
+1. Profile the data by finding the total number of records for each of the tables below:\
+	\
+i. Attribute table = \cf2 \outl0\strokewidth0 10000\cf2 \outl0\strokewidth0 \strokec2 \
+ii. Business table = \cf2 \outl0\strokewidth0 10000\cf2 \outl0\strokewidth0 \strokec2 \
+iii. Category table = \cf2 \outl0\strokewidth0 10000\cf2 \outl0\strokewidth0 \strokec2 \
+iv. Checkin table = \cf2 \outl0\strokewidth0 10000\cf2 \outl0\strokewidth0 \strokec2 \
+v. elite_years table = \cf2 \outl0\strokewidth0 10000\cf2 \outl0\strokewidth0 \strokec2 \
+vi. friend table = \cf2 \outl0\strokewidth0 10000\cf2 \outl0\strokewidth0 \strokec2 \
+vii. hours table = \cf2 \outl0\strokewidth0 10000\cf2 \outl0\strokewidth0 \strokec2 \
+viii. photo table = \cf2 \outl0\strokewidth0 10000\cf2 \outl0\strokewidth0 \strokec2 \
+ix. review table = \cf2 \outl0\strokewidth0 10000\cf2 \outl0\strokewidth0 \strokec2 \
+x. tip table = \cf2 \outl0\strokewidth0 10000\cf2 \outl0\strokewidth0 \strokec2 \
+xi. user table = \cf2 \outl0\strokewidth0 10000\cf2 \outl0\strokewidth0 \strokec2 \
+	\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 2. Find the total distinct records by either the foreign key or primary key for each table. If two foreign keys are listed in the table, please specify which foreign key.\
+\
+i. Business = 10000\
+ii. Hours = 1562\
+iii. Category = 2643 \
+iv. Attribute = 1115\
+v. Review = 8090 by \cf2 \outl0\strokewidth0 business_id\cf2 \outl0\strokewidth0 \strokec2 \
+vi. Checkin = 493\
+vii. Photo = 
+\f1 \cf3 \cb4 \strokec3 6493
+\f0 \cf2 \cb1 \strokec2 \
+viii. Tip = 537 \cf2 \outl0\strokewidth0 by business_id\cf2 \outl0\strokewidth0 \strokec2 \
+ix. User = 10000\
+x. Friend = 11\
+xi. Elite_years = 2780 \
+\
+\
+\
+Note: Primary Keys are denoted in the ER-Diagram with a yellow key icon.	\
+\
+\
+\
+3. Are there any columns with null values in the Users table? Indicate "yes," or "no."\
+\
+	Answer: no\
+	\
+	SQL code used to arrive at answer: \
+	\
+	select * \
+	from User\
+	where id is null or name is null or review_count is null or yelping_since is null or useful is null or funny is null or cool is null or fans is null or average_stars is null or compliment_hot is null or compliment_more is null or compliment_profile is null or compliment_cute is null or compliment_list is null or compliment_note is null or compliment_plain is null or compliment_cool is null or compliment_funny is null or compliment_writer is null or compliment_photos is null \
+	\
+	\
+\
+4. For each table and column listed below, display the smallest (minimum), largest (maximum), and average (mean) value for the following fields:\
+\
+	i. Table: Review, Column: Stars\
+	\
+		min:	1	max:	5	avg: 
+\f1 \cf3 \cb4 \strokec3 3.7082
+\f0 \cf2 \cb1 \strokec2 \
+		\
+	\
+	ii. Table: Business, Column: Stars\
+	\
+		min:	1	max:	5	avg: 
+\f1 \cf3 \cb4 \strokec3 3.6549
+\f0 \cf2 \cb1 \strokec2 \
+		\
+	\
+	iii. Table: Tip, Column: Likes\
+	\
+		min:	0	max:	2	avg: 
+\f1 \cf3 \cb4 \strokec3 0.0144
+\f0 \cf2 \cb1 \strokec2 \
+		\
+	\
+	iv. Table: Checkin, Column: Count\
+	\
+		min:	1	max:	53	avg: 
+\f1 \cf3 \cb4 \strokec3 1.9414\
+
+\f0 \cf2 \cb1 \strokec2 		\
+	\
+	v. Table: User, Column: Review_count\
+	\
+		min:	0	max:	2000	avg: 
+\f1 \cf3 \cb4 \strokec3 24.2995
+\f0 \cf2 \cb1 \strokec2 \
+\
+SELECT sum(stars) * 1.0 / count(stars)\
+FROM review\
+\
+SELECT avg(stars)\
+FROM review\
+\
+\
+5. List the cities with the most reviews in descending order:\
+\
+	SQL code used to arrive at answer:\
+	\
+select city, sum(review_count) as c\
+from business\
+group by city\
+order by c desc\
+\
+	Copy and Paste the Result Below:\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1 \cf3 \cb4 \strokec3 +-----------------+-------+\
+| city            |     c |\
++-----------------+-------+\
+| Las Vegas       | 82854 |\
+| Phoenix         | 34503 |\
+| Toronto         | 24113 |\
+| Scottsdale      | 20614 |\
+| Charlotte       | 12523 |\
+| Henderson       | 10871 |\
+| Tempe           | 10504 |\
+| Pittsburgh      |  9798 |\
+| Montr\'e9al        |  9448 |\
+| Chandler        |  8112 |\
+| Mesa            |  6875 |\
+| Gilbert         |  6380 |\
+| Cleveland       |  5593 |\
+| Madison         |  5265 |\
+| Glendale        |  4406 |\
+| Mississauga     |  3814 |\
+| Edinburgh       |  2792 |\
+| Peoria          |  2624 |\
+| North Las Vegas |  2438 |\
+| Markham         |  2352 |\
+| Champaign       |  2029 |\
+| Stuttgart       |  1849 |\
+| Surprise        |  1520 |\
+| Lakewood        |  1465 |\
+| Goodyear        |  1155 |\
++-----------------+-------+\
+(Output limit exceeded, 25 of 362 total rows shown)\
+
+\f0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 	\
+6. Find the distribution of star ratings to the business in the following cities:\
+\
+i. Avon\
+\
+SQL code used to arrive at answer: \
+\
+select stars, sum(review_count) as  c\
+from business\
+where city = "Avon"\
+group by stars\
+\
+\
+Copy and Paste the Resulting Table Below (2 columns \'e2\'80\'93 star rating and count):\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1 \cf3 \cb4 \strokec3 +-------+----+\
+| stars |  c |\
++-------+----+\
+|   1.5 | 10 |\
+|   2.5 |  6 |\
+|   3.5 | 88 |\
+|   4.0 | 21 |\
+|   4.5 | 31 |\
+|   5.0 |  3 |\
++-------+----+\
+
+\f0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 ii. Beachwood\
+\
+SQL code used to arrive at answer:\
+\
+select stars, sum(review_count) as  c\
+from business\
+where city = "Beachwood"\
+group by stars\
+\
+Copy and Paste the Resulting Table Below (2 columns \'e2\'80\'93 star rating and count):\
+		\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1 \cf3 \cb4 \strokec3 +-------+----+\
+| stars |  c |\
++-------+----+\
+|   2.0 |  8 |\
+|   2.5 |  3 |\
+|   3.0 | 11 |\
+|   3.5 |  6 |\
+|   4.0 | 69 |\
+|   4.5 | 17 |\
+|   5.0 | 23 |\
++-------+----+
+\f0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+7. Find the top 3 users based on their total number of reviews:\
+		\
+	SQL code used to arrive at answer:\
+	\
+select id, review_count\
+from user\
+order by review_count desc\
+limit 3\
+\
+	Copy and Paste the Result Below:\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1 \cf3 \cb4 \strokec3 +------------------------+--------------+\
+| id                     | review_count |\
++------------------------+--------------+\
+| -G7Zkl1wIWBBmD0KRy_sCw |         2000 |\
+| -3s52C4zL_DHRK0ULG6qtg |         1629 |\
+| -8lbUNlXVSoXqaRRiHiSNg |         1339 |\
++------------------------+--------------+
+\f0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 		\
+\
+\
+8. Does posing more reviews correlate with more fans?\
+\
+	Please explain your findings and interpretation of the results:\
+	\
+	Yes. \
+	The average number of review is 24.3. \
+	For those who post reviews higher than average, they have 7.43 fans on average.\
+	For those who post reivews lower than average, they have 0.19 fans in average. \
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 	SQL code: \
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 select avg(review_count), max(review_count), min(review_count)\
+from user\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1 \cf3 \cb4 \strokec3 +-------------------+-------------------+-------------------+\
+| avg(review_count) | max(review_count) | min(review_count) |\
++-------------------+-------------------+-------------------+\
+|           24.2995 |              2000 |                 0 |\
++-------------------+-------------------+-------------------+\
+\
+select avg(fans), max(fans), min(fans), cont(fans)\
+from user\
++-----------+-----------+-----------+\
+| avg(fans) | max(fans) | min(fans) |\
++-----------+-----------+-----------+\
+|    1.4896 |       503 |         0 |\
++-----------+-----------+-----------+
+\f0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+select avg(fans), max(fans), min(fans)\
+from user\
+where review_count > 24.2995\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1 \cf3 \cb4 \strokec3 +--------------+-----------+-----------+\
+|    avg(fans) | max(fans) | min(fans) |\
++--------------+-----------+-----------+\
+| 7.4338358459 |       503 |         0 |\
++--------------+-----------+-----------+\
+
+\f0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 select avg(fans), max(fans), min(fans)\
+from user\
+where review_count < 24.2995\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1 \cf3 \cb4 \strokec3 +----------------+-----------+-----------+\
+|      avg(fans) | max(fans) | min(fans) |\
++----------------+-----------+-----------+\
+| 0.192715312462 |        70 |         0 |\
++----------------+-----------+-----------+
+\f0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+9. Are there more reviews with the word "love" or with the word "hate" in them?\
+\
+	Answer: love \
+	\
+	SQL code used to arrive at answer:\
+\
+select *\
+from review\
+where text like "%love%"\
+\
+select *\
+from review\
+where text like "%hate%"\
+\
+	\
+	\
+10. Find the top 10 users with the most fans:\
+\
+	SQL code used to arrive at answer:\
+\
+select id, fans\
+from user\
+order by fans desc\
+limit 10\
+	\
+	Copy and Paste the Result Below:\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1 \cf3 \cb4 \strokec3 +------------------------+------+\
+| id                     | fans |\
++------------------------+------+\
+| -9I98YbNQnLdAmcYfb324Q |  503 |\
+| -8EnCioUmDygAbsYZmTeRQ |  497 |\
+| --2vR0DIsmQ6WfcSzKWigw |  311 |\
+| -G7Zkl1wIWBBmD0KRy_sCw |  253 |\
+| -0IiMAZI2SsQ7VmyzJjokQ |  173 |\
+| -g3XIcCb2b-BD0QBCcq2Sw |  159 |\
+| -9bbDysuiWeo2VShFJJtcw |  133 |\
+| -FZBTkAZEXoP7CYvRV2ZwQ |  126 |\
+| -9da1xk7zgnnfO1uTVYGkA |  124 |\
+| -lh59ko3dxChBSZ9U7LfUw |  120 |\
++------------------------+------+
+\f0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 	\
+		\
+\
+Part 2: Inferences and Analysis\
+\
+1. Pick one city and category of your choice and group the businesses in that city or category by their overall star rating. Compare the businesses with 2-3 stars to the businesses with 4-5 stars and answer the following questions. Include your code.\
+	\
+i. Do the two groups you chose to analyze have a different distribution of hours?\
+\
+Different. \
+\
+ii. Do the two groups you chose to analyze have a different number of reviews?\
+         \
+Different. \
+\
+iii. Are you able to infer anything from the location data provided between these two groups? Explain.\
+\
+No. Different location. \
+\
+\
+SQL code used for analysis:\
+\
+select b.name, \
+case when hours like "%monday%" then 1\
+      when hours like "%tuesday%" then 2\
+      when hours like "%wednesday%" then 3\
+      when hours like "%thursday%" then 4\
+      when hours like "%friday%" then 5\
+      when hours like "%saturday%" then 6\
+      when hours like "%sunday%" then 7\
+end as day, \
+case when b.stars between 2 and 3 then "2-3"\
+      when b.stars between 4 and 5 then "4-5"\
+end as star2, \
+hours\
+from business as b inner join hours as h on b.id = h.business_id \
+    inner join category as c on c.business_id = b.id\
+    where b.city = "Las Vegas" and c.category like "%shopping%" \
+          and (b.stars between 2 and 3 or b.stars between 4 and 5) \
+group by star2, day\
+order by day, star2 asc
+\f1 \cf3 \cb4 \strokec3 \
+\pard\pardeftab720\sl320\partightenfactor0
+\cf3 \
+
+\f0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+2. Group business based on the ones that are open and the ones that are closed. What differences can you find between the ones that are still open and the ones that are closed? List at least two differences and the SQL code you used to arrive at your answer.\
+		\
+i. Difference 1: business still open has higher stars on average. \
+         \
+         \
+ii. Difference 2: \cf2 \outl0\strokewidth0 business still open has more reviews on average. \cf2 \outl0\strokewidth0 \strokec2 \
+         \
+         \
+SQL code used for analysis:\
+\
+select is_open, avg(stars), avg(review_count), count(*) as cnt\
+from business\
+group by is_open\
+	\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1 \cf3 \cb4 \strokec3 +---------+---------------+-------------------+------+\
+| is_open |    avg(stars) | avg(review_count) |  cnt |\
++---------+---------------+-------------------+------+\
+|       0 | 3.52039473684 |     23.1980263158 | 1520 |\
+|       1 | 3.67900943396 |     31.7570754717 | 8480 |\
++---------+---------------+-------------------+------+\
+
+\f0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 	\
+3. For this last part of your analysis, you are going to choose the type of analysis you want to conduct on the Yelp dataset and are going to prepare the data for analysis.\
+\
+Ideas for analysis include: Parsing out keywords and business attributes for sentiment analysis, clustering businesses to find commonalities or anomalies between them, predicting the overall star rating for a business, predicting the number of fans a user will have, and so on. These are just a few examples to get you started, so feel free to be creative and come up with your own problem you want to solve. Provide answers, in-line, to all of the following:\
+	\
+i. Indicate the type of analysis you chose to do:\
+         \
+         \
+ii. Write 1-2 brief paragraphs on the type of data you will need for your analysis and why you chose that data:\
+                           \
+                  \
+iii. Output of your finished dataset:\
+         \
+         \
+iv. Provide the SQL code you used to create your final dataset:\
+}
