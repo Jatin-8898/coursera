@@ -63,3 +63,23 @@ address{
 #nonSmoking, #smoking {
     display:none;
 }
+/* .modal-content {
+	.modal-header {
+		background:$background-dark;
+		color:floralwhite;
+		border-bottom: none;
+
+ 		.close {
+			color:floralwhite;
+		}
+	}
+
+ 	.modal-body {
+		background:$background-pale;
+	}
+
+ 	.modal-footer {
+		background:$background-light;
+		border-top: none;
+	}
+} */
