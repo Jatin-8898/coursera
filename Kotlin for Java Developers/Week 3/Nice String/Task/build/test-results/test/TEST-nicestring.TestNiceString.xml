@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nicestring.TestNiceString" tests="52" skipped="0" failures="0" errors="0" timestamp="2020-04-25T08:50:37" hostname="Jatin" time="0.032">
+  <properties/>
+  <testcase name="testExample1" classname="nicestring.TestNiceString" time="0.019"/>
+  <testcase name="testExample2" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testExample3" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testExample4" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testExample5" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice01" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice02" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice03" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice04" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice05" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice06" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice07" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice08" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice09" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice10" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice11" classname="nicestring.TestNiceString" time="0.001"/>
+  <testcase name="testNice12" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice13" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice14" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice15" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice16" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice17" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice18" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice19" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice20" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice21" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice22" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice23" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice24" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice25" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice26" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNice27" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice1" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice10" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice11" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice12" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice13" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice14" classname="nicestring.TestNiceString" time="0.001"/>
+  <testcase name="testNotNice15" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice16" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice17" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice18" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice19" classname="nicestring.TestNiceString" time="0.001"/>
+  <testcase name="testNotNice2" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice20" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice3" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice4" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice5" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice6" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice7" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice8" classname="nicestring.TestNiceString" time="0.0"/>
+  <testcase name="testNotNice9" classname="nicestring.TestNiceString" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

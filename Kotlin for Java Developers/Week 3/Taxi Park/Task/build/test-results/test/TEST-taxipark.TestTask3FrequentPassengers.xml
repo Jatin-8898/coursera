@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="taxipark.TestTask3FrequentPassengers" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-04-25T12:49:44" hostname="Jatin" time="0.019">
+  <properties/>
+  <testcase name="test0" classname="taxipark.TestTask3FrequentPassengers" time="0.003"/>
+  <testcase name="test01" classname="taxipark.TestTask3FrequentPassengers" time="0.001"/>
+  <testcase name="test02" classname="taxipark.TestTask3FrequentPassengers" time="0.001"/>
+  <testcase name="test03" classname="taxipark.TestTask3FrequentPassengers" time="0.0"/>
+  <testcase name="test04" classname="taxipark.TestTask3FrequentPassengers" time="0.002"/>
+  <testcase name="test05" classname="taxipark.TestTask3FrequentPassengers" time="0.002"/>
+  <testcase name="test06" classname="taxipark.TestTask3FrequentPassengers" time="0.001"/>
+  <testcase name="test07" classname="taxipark.TestTask3FrequentPassengers" time="0.005"/>
+  <testcase name="test08" classname="taxipark.TestTask3FrequentPassengers" time="0.0"/>
+  <testcase name="test09" classname="taxipark.TestTask3FrequentPassengers" time="0.001"/>
+  <testcase name="test10" classname="taxipark.TestTask3FrequentPassengers" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Nice_String-Task_main" target="1.8" />
+      <module name="Nice_String-Task_test" target="1.8" />
+      <module name="Taxi_Park-Task_main" target="1.8" />
+      <module name="Taxi_Park-Task_test" target="1.8" />
+      <module name="util_main" target="1.8" />
+      <module name="util_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

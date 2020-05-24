@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="taxipark.TestTask4SmartPassengers" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-04-25T12:49:44" hostname="Jatin" time="0.031">
+  <properties/>
+  <testcase name="test00" classname="taxipark.TestTask4SmartPassengers" time="0.008"/>
+  <testcase name="test01" classname="taxipark.TestTask4SmartPassengers" time="0.0"/>
+  <testcase name="test02" classname="taxipark.TestTask4SmartPassengers" time="0.0"/>
+  <testcase name="test03" classname="taxipark.TestTask4SmartPassengers" time="0.001"/>
+  <testcase name="test04" classname="taxipark.TestTask4SmartPassengers" time="0.0"/>
+  <testcase name="test05" classname="taxipark.TestTask4SmartPassengers" time="0.0"/>
+  <testcase name="test06" classname="taxipark.TestTask4SmartPassengers" time="0.001"/>
+  <testcase name="test07" classname="taxipark.TestTask4SmartPassengers" time="0.0"/>
+  <testcase name="test08" classname="taxipark.TestTask4SmartPassengers" time="0.0"/>
+  <testcase name="test09" classname="taxipark.TestTask4SmartPassengers" time="0.001"/>
+  <testcase name="test10" classname="taxipark.TestTask4SmartPassengers" time="0.013"/>
+  <testcase name="test11" classname="taxipark.TestTask4SmartPassengers" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
