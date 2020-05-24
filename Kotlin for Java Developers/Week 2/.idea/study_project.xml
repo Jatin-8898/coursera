@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="StudySettings">
+    <StudyTaskManager>
+      <option name="VERSION" value="11" />
+      <option name="myUserTests">
+        <map />
+      </option>
+      <option name="course">
+        <Course>
+          <option name="authors">
+            <list />
+          </option>
+          <option name="courseMode" value="Study" />
+          <option name="courseType" value="Coursera" />
+          <option name="customPresentableName" />
+          <option name="description" value="Assignment for Week 2 of the Coursera &lt;a href=&quot;https://www.coursera.org/learn/kotlin-for-java-developers/&quot;&gt;Kotlin for Java Developers&lt;/a&gt; course" />
+          <option name="fromZip" value="false" />
+          <option name="index" value="-1" />
+          <option name="language" value="kotlin" />
+          <option name="languageCode" value="en" />
+          <option name="name" value="Kotlin for Java Developers. Week 2" />
+          <option name="stepikChangeStatus" value="Up to date" />
+          <option name="items">
+            <list>
+              <Lesson>
+                <option name="customPresentableName" />
+                <option name="id" value="0" />
+                <option name="index" value="1" />
+                <option name="name" value="Mastermind" />
+                <option name="stepikChangeStatus" value="Up to date" />
+                <option name="updateDate" value="0" />
+                <option name="taskList">
+                  <list>
+                    <EduTask>
+                      <option name="additionalFiles">
+                        <map>
+                          <entry key="assignmentKey">
+                            <value>
+                              <AdditionalFile>
+                                <option name="text" value="qF70Z5yXEeiogBK51jO1Gg" />
+                                <option name="visible" value="false" />
+                              </AdditionalFile>
+                            </value>
+                          </entry>
+                          <entry key="partId">
+                            <value>
+                              <AdditionalFile>
+                                <option name="text" value="GWATl" />
+                                <option name="visible" value="false" />
+                              </AdditionalFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                      <option name="customPresentableName" />
+                      <option name="descriptionFormat" value="MD" />
+                      <option name="descriptionText" value="## Mastermind game&#10;&#10;[Mastermind](https://en.wikipedia.org/wiki/Mastermind_(board_game)) is a board game for two players. &#10;The first player invents a code and the second player tries to guess this code.&#10;A code is made up 4 coloured pins and their position.&#10;There are 6 colours to choose from and the same colour can be repeated multiple times. &#10;&#10;Examples of different codes:&#10;&#10;* Red Green Blue Yellow&#10;* Red Green Yellow Blue&#10;* Black White Red Orange&#10;* Red Red Blue White&#10;&#10;(note that while the first two codes use the same colours, they are different as Blue and Yellow occupy different positions)&#10;&#10;The game play is as follows:&#10;&#10;The second player (the one that is guessing) sets out a series of pins in order to guess the code.&#10;The first player (that defined the code) then provides some feedback to the player in light of how close they are to the correct combination. &#10;&#10;The feedback is as follows:&#10;&#10;- Number of pins that are both the right colour and position&#10;- Number of pins that are correct in colour but in the wrong position&#10;&#10;Note that the rest pins in the code will pins that are neither correct in colour or position.&#10;&#10;Your task is to evaluate a guess made by player two of the code set by player one.&#10;For the sake of simplicity, we use  uppercase letters from A to F instead of colours.&#10;&#10;You can test your solution and play as a second player using `playMastermind`.&#10;&#10;### Different Letters&#10;&#10;#### Example 1&#10;&#10;Secret `ABCD` and guess `ABCD` must be evaluated to: `rightPosition = 4, wrongPosition = 0`.&#10;All letters are guessed correctly in respect to their positions.&#10;&#10;#### Example 2&#10;&#10;Secret `ABCD` and guess `CDBA` must be evaluated to: `rightPosition = 0, wrongPosition = 4`.&#10;All letters are guessed correctly, but none has the right position.&#10;&#10;#### Example 3&#10;&#10;Secret `ABCD` and guess `ABDC` must be evaluated to: `rightPosition = 2, wrongPosition = 2`.&#10;`A` and `B` letters and their positions are guessed correctly.&#10;`C` and `D` letters are guessed correctly, but their positions are wrong.&#10;&#10;At first, you can implement this easier task, when all the letters are different,&#10;and only after that start with the next part, when letters can be repeated.&#10;Run `MastermindTestDifferentLetters` to make sure you've implemented this part correctly.  &#10;&#10;### Repeated Letters&#10;&#10;#### Example 4&#10;&#10;Secret `AABC` and guess `ADFE` must be evaluated to: `rightPosition = 1, wrongPosition = 0`.&#10;`A` at the first position is guessed correctly with its position.&#10;If we remove the first `A` from consideration (comparing the remaining `ABC` and&#10;`DFE` only), that will give us no more common letters or positions.&#10;&#10;#### Example 5&#10;&#10;Secret `AABC` and guess `ADFA` must be evaluated to: `rightPosition = 1, wrongPosition = 1`.&#10;The first `A` letter is guessed correctly with its position. If we remove this letter from consideration&#10;(comparing the remaining `ABC` and `DFA`), we find the second `A` letter which is guessed correctly&#10;but stays at the wrong position.&#10;&#10;#### Example 6&#10;&#10;Secret `AABC` and guess `DFAA` must be evaluated to: `rightPosition = 0, wrongPosition = 2`.&#10;No letters are guessed correctly concerning their positions. &#10;When we compare the letters without positions, `A` is guessed correctly.&#10;Since `A` is present twice in both guess and secret, it must be counted two times.&#10;&#10;#### Example 7&#10;&#10;Secret `AABC` and guess `DEFA` must be evaluated to: `rightPosition = 0, wrongPosition = 1`.&#10;The letter `A` occurs only once in the second string, that's why it counted only once as staying at the wrong position.&#10;&#10;After implementing the task for repeated letters, run `MastermindTestDifferentLetters` to make sure &#10;it works correctly." />
+                      <option name="feedbackLink">
+                        <FeedbackLink>
+                          <option name="link" value="https://www.coursera.org/learn/kotlin-for-java-developers/programming/vmwVT/mastermind-game/discussions" />
+                          <option name="type" value="CUSTOM" />
+                        </FeedbackLink>
+                      </option>
+                      <option name="index" value="1" />
+                      <option name="name" value="Task" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepId" value="0" />
+                      <option name="stepikChangeStatus" value="Up to date" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="src/mastermind/evaluateGuess.kt">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="hints">
+                                        <list />
+                                      </option>
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="6" />
+                                          <option name="offset" value="158" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="initializedFromDependency" value="false" />
+                                      <option name="length" value="316" />
+                                      <option name="offset" value="155" />
+                                      <option name="placeholderDependency" />
+                                      <option name="placeholderText" value="TODO()" />
+                                      <option name="possibleAnswer" value="" />
+                                      <option name="selected" value="true" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="studentAnswer" />
+                                      <option name="useLength" value="true" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="name" value="src/mastermind/evaluateGuess.kt" />
+                                <option name="text" value="package mastermind&#10;&#10;data class Evaluation(val rightPosition: Int, val wrongPosition: Int)&#10;&#10;fun evaluateGuess(secret: String, guess: String): Evaluation {&#10;    TODO()&#10;}&#10;" />
+                                <option name="trackChanges" value="true" />
+                                <option name="trackLengths" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="visible" value="true" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="src/mastermind/playMastermind.kt">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="name" value="src/mastermind/playMastermind.kt" />
+                                <option name="text" value="package mastermind&#10;&#10;import kotlin.random.Random&#10;&#10;val ALPHABET = 'A'..'F'&#10;const val CODE_LENGTH = 4&#10;&#10;fun main() {&#10;    val differentLetters = false&#10;    playMastermind(differentLetters)&#10;}&#10;&#10;fun playMastermind(&#10;        differentLetters: Boolean,&#10;        secret: String = generateSecret(differentLetters)&#10;) {&#10;    var evaluation: Evaluation&#10;&#10;    do {&#10;        print(&quot;Your guess: &quot;)&#10;        var guess = readLine()!!&#10;        while (hasErrorsInInput(guess)) {&#10;            println(&quot;Incorrect input: $guess. &quot; +&#10;                    &quot;It should consist of $CODE_LENGTH characters from $ALPHABET. &quot; +&#10;                    &quot;Please try again.&quot;)&#10;            guess = readLine()!!&#10;        }&#10;        evaluation = evaluateGuess(secret, guess)&#10;        if (evaluation.isComplete()) {&#10;            println(&quot;The guess is correct!&quot;)&#10;        } else {&#10;            println(&quot;Right positions: ${evaluation.rightPosition}; &quot; +&#10;                    &quot;wrong positions: ${evaluation.wrongPosition}.&quot;)&#10;        }&#10;&#10;    } while (!evaluation.isComplete())&#10;}&#10;&#10;fun Evaluation.isComplete(): Boolean = rightPosition == CODE_LENGTH&#10;&#10;fun hasErrorsInInput(guess: String): Boolean {&#10;    val possibleLetters = ALPHABET.toSet()&#10;    return guess.length != CODE_LENGTH || guess.any { it !in possibleLetters }&#10;}&#10;&#10;fun generateSecret(differentLetters: Boolean): String {&#10;    val chars = ALPHABET.toMutableList()&#10;    return buildString {&#10;        for (i in 1..CODE_LENGTH) {&#10;            val letter = chars[Random.nextInt(chars.size)]&#10;            append(letter)&#10;            if (differentLetters) {&#10;                chars.remove(letter)&#10;            }&#10;        }&#10;    }&#10;}&#10;" />
+                                <option name="trackChanges" value="true" />
+                                <option name="trackLengths" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="visible" value="true" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="test/mastermind/MastermindTestUtil.kt">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="name" value="test/mastermind/MastermindTestUtil.kt" />
+                                <option name="text" value="package mastermind&#10;&#10;import org.junit.Assert&#10;&#10;internal fun testEvaluation(first: String, second: String, positions: Int, letters: Int) {&#10;    val evaluation = Evaluation(positions, letters)&#10;    testEvaluationOneWay(secret = first, guess = second, expected = evaluation)&#10;    testEvaluationOneWay(guess = second, secret = first, expected = evaluation)&#10;}&#10;&#10;internal fun testEvaluationOneWay(secret: String, guess: String, expected: Evaluation) {&#10;    val evaluation = evaluateGuess(secret, guess)&#10;    Assert.assertEquals(&quot;Wrong evaluation for secret=$secret, guess=$guess&quot;,&#10;            expected, evaluation)&#10;}&#10;" />
+                                <option name="trackChanges" value="true" />
+                                <option name="trackLengths" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="visible" value="true" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="test/mastermind/TestMastermindDifferentLetters.kt">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="name" value="test/mastermind/TestMastermindDifferentLetters.kt" />
+                                <option name="text" value="package mastermind&#10;&#10;import org.junit.FixMethodOrder&#10;import org.junit.Test&#10;import org.junit.runners.MethodSorters&#10;&#10;@FixMethodOrder(MethodSorters.NAME_ASCENDING)&#10;class TestMastermindDifferentLetters {&#10;&#10;    @Test&#10;    fun test01SampleEqual() = testEvaluation(&quot;ABCD&quot;, &quot;ABCD&quot;, 4, 0)&#10;&#10;    @Test&#10;    fun test02SampleOnlyWrongPositions() = testEvaluation(&quot;ABCD&quot;, &quot;CDBA&quot;, 0, 4)&#10;&#10;    @Test&#10;    fun test03SampleSwap() = testEvaluation(&quot;ABCD&quot;, &quot;ABDC&quot;, 2, 2)&#10;&#10;    @Test&#10;    fun test04RightPositions() = testEvaluation(&quot;ABCD&quot;, &quot;ABCF&quot;, 3, 0)&#10;&#10;    @Test&#10;    fun test05WrongPositions() = testEvaluation(&quot;DAEF&quot;, &quot;FECA&quot;, 0, 3)&#10;&#10;    @Test&#10;    fun test06BothRightAndWrong() = testEvaluation(&quot;ACEB&quot;, &quot;BCDF&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test07() = testEvaluation(&quot;FBAE&quot;, &quot;ABCD&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test08() = testEvaluation(&quot;FBAE&quot;, &quot;AFDC&quot;, 0, 2)&#10;&#10;    @Test&#10;    fun test09() = testEvaluation(&quot;FBAE&quot;, &quot;CBAE&quot;, 3, 0)&#10;&#10;    @Test&#10;    fun test10() = testEvaluation(&quot;FBAE&quot;, &quot;CBFE&quot;, 2, 1)&#10;&#10;    @Test&#10;    fun test11() = testEvaluation(&quot;FBAE&quot;, &quot;FBAE&quot;, 4, 0)&#10;&#10;    @Test&#10;    fun test12() = testEvaluation(&quot;EBAC&quot;, &quot;ABCD&quot;, 1, 2)&#10;&#10;    @Test&#10;    fun test13() = testEvaluation(&quot;EBAC&quot;, &quot;AFCB&quot;, 0, 3)&#10;&#10;    @Test&#10;    fun test14() = testEvaluation(&quot;EBAC&quot;, &quot;CBDF&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test15() = testEvaluation(&quot;EBAC&quot;, &quot;EBAC&quot;, 4, 0)&#10;}&#10;" />
+                                <option name="trackChanges" value="true" />
+                                <option name="trackLengths" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="visible" value="true" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="test/mastermind/TestMastermindRepeatedLetters.kt">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="name" value="test/mastermind/TestMastermindRepeatedLetters.kt" />
+                                <option name="text" value="package mastermind&#10;&#10;import org.junit.FixMethodOrder&#10;import org.junit.Test&#10;import org.junit.runners.MethodSorters&#10;&#10;@FixMethodOrder(MethodSorters.NAME_ASCENDING)&#10;class TestMastermindRepeatedLetters {&#10;&#10;    @Test&#10;    fun test01Sample() = testEvaluation(&quot;AABC&quot;, &quot;ADFE&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test02Sample() = testEvaluation(&quot;AABC&quot;, &quot;ADFA&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test03Sample() = testEvaluation(&quot;AABC&quot;, &quot;DFAA&quot;, 0, 2)&#10;&#10;    @Test&#10;    fun test04Sample() = testEvaluation(&quot;AABC&quot;, &quot;DEFA&quot;, 0, 1)&#10;&#10;    @Test&#10;    fun test05() = testEvaluation(&quot;ABCD&quot;, &quot;EAAA&quot;, 0, 1)&#10;&#10;    @Test&#10;    fun test06() = testEvaluation(&quot;AABC&quot;, &quot;ADFA&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test07() = testEvaluation(&quot;AABC&quot;, &quot;DEFA&quot;, 0, 1)&#10;&#10;    @Test&#10;    fun test08() = testEvaluation(&quot;EDEB&quot;, &quot;CBFE&quot;, 0, 2)&#10;&#10;    @Test&#10;    fun test09() = testEvaluation(&quot;CFDF&quot;, &quot;FCCD&quot;, 0, 3)&#10;&#10;    @Test&#10;    fun test10() = testEvaluation(&quot;AABC&quot;, &quot;AEFD&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test11() = testEvaluation(&quot;DCFC&quot;, &quot;ABEC&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test12() = testEvaluation(&quot;FDCD&quot;, &quot;FBAD&quot;, 2, 0)&#10;&#10;    @Test&#10;    fun test13() = testEvaluation(&quot;DEFA&quot;, &quot;AABC&quot;, 0, 1)&#10;&#10;    @Test&#10;    fun test14() = testEvaluation(&quot;DAAE&quot;, &quot;AABC&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test15() = testEvaluation(&quot;BBDC&quot;, &quot;DFBB&quot;, 0, 3)&#10;&#10;    @Test&#10;    fun test16() = testEvaluation(&quot;DBFF&quot;, &quot;FFDD&quot;, 0, 3)&#10;&#10;    @Test&#10;    fun test17() = testEvaluation(&quot;BDAD&quot;, &quot;AAAE&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test18() = testEvaluation(&quot;FDDB&quot;, &quot;CABB&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test19() = testEvaluation(&quot;BDBC&quot;, &quot;DDFC&quot;, 2, 0)&#10;&#10;    @Test&#10;    fun test20() = testEvaluation(&quot;ECDE&quot;, &quot;CEEE&quot;, 1, 2)&#10;&#10;    @Test&#10;    fun test21() = testEvaluation(&quot;AAAF&quot;, &quot;ABCA&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test22() = testEvaluation(&quot;BCDA&quot;, &quot;AFEA&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test23() = testEvaluation(&quot;EEEE&quot;, &quot;AFEA&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test24() = testEvaluation(&quot;EEBE&quot;, &quot;AFEA&quot;, 0, 1)&#10;&#10;    @Test&#10;    fun test25() = testEvaluation(&quot;EEAD&quot;, &quot;EEEE&quot;, 2, 0)&#10;&#10;    @Test&#10;    fun test26() = testEvaluation(&quot;BACD&quot;, &quot;EAFF&quot;, 1, 0)&#10;}&#10;" />
+                                <option name="trackChanges" value="true" />
+                                <option name="trackLengths" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="visible" value="true" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                      <option name="testsText">
+                        <map>
+                          <entry key="test/mastermind/MastermindTestUtil.kt" value="package mastermind&#10;&#10;import org.junit.Assert&#10;&#10;internal fun testEvaluation(first: String, second: String, positions: Int, letters: Int) {&#10;    val evaluation = Evaluation(positions, letters)&#10;    testEvaluationOneWay(secret = first, guess = second, expected = evaluation)&#10;    testEvaluationOneWay(guess = second, secret = first, expected = evaluation)&#10;}&#10;&#10;internal fun testEvaluationOneWay(secret: String, guess: String, expected: Evaluation) {&#10;    val evaluation = evaluateGuess(secret, guess)&#10;    Assert.assertEquals(&quot;Wrong evaluation for secret=$secret, guess=$guess&quot;,&#10;            expected, evaluation)&#10;}&#10;" />
+                          <entry key="test/mastermind/TestMastermindDifferentLetters.kt" value="package mastermind&#10;&#10;import org.junit.FixMethodOrder&#10;import org.junit.Test&#10;import org.junit.runners.MethodSorters&#10;&#10;@FixMethodOrder(MethodSorters.NAME_ASCENDING)&#10;class TestMastermindDifferentLetters {&#10;&#10;    @Test&#10;    fun test01SampleEqual() = testEvaluation(&quot;ABCD&quot;, &quot;ABCD&quot;, 4, 0)&#10;&#10;    @Test&#10;    fun test02SampleOnlyWrongPositions() = testEvaluation(&quot;ABCD&quot;, &quot;CDBA&quot;, 0, 4)&#10;&#10;    @Test&#10;    fun test03SampleSwap() = testEvaluation(&quot;ABCD&quot;, &quot;ABDC&quot;, 2, 2)&#10;&#10;    @Test&#10;    fun test04RightPositions() = testEvaluation(&quot;ABCD&quot;, &quot;ABCF&quot;, 3, 0)&#10;&#10;    @Test&#10;    fun test05WrongPositions() = testEvaluation(&quot;DAEF&quot;, &quot;FECA&quot;, 0, 3)&#10;&#10;    @Test&#10;    fun test06BothRightAndWrong() = testEvaluation(&quot;ACEB&quot;, &quot;BCDF&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test07() = testEvaluation(&quot;FBAE&quot;, &quot;ABCD&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test08() = testEvaluation(&quot;FBAE&quot;, &quot;AFDC&quot;, 0, 2)&#10;&#10;    @Test&#10;    fun test09() = testEvaluation(&quot;FBAE&quot;, &quot;CBAE&quot;, 3, 0)&#10;&#10;    @Test&#10;    fun test10() = testEvaluation(&quot;FBAE&quot;, &quot;CBFE&quot;, 2, 1)&#10;&#10;    @Test&#10;    fun test11() = testEvaluation(&quot;FBAE&quot;, &quot;FBAE&quot;, 4, 0)&#10;&#10;    @Test&#10;    fun test12() = testEvaluation(&quot;EBAC&quot;, &quot;ABCD&quot;, 1, 2)&#10;&#10;    @Test&#10;    fun test13() = testEvaluation(&quot;EBAC&quot;, &quot;AFCB&quot;, 0, 3)&#10;&#10;    @Test&#10;    fun test14() = testEvaluation(&quot;EBAC&quot;, &quot;CBDF&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test15() = testEvaluation(&quot;EBAC&quot;, &quot;EBAC&quot;, 4, 0)&#10;}&#10;" />
+                          <entry key="test/mastermind/TestMastermindRepeatedLetters.kt" value="package mastermind&#10;&#10;import org.junit.FixMethodOrder&#10;import org.junit.Test&#10;import org.junit.runners.MethodSorters&#10;&#10;@FixMethodOrder(MethodSorters.NAME_ASCENDING)&#10;class TestMastermindRepeatedLetters {&#10;&#10;    @Test&#10;    fun test01Sample() = testEvaluation(&quot;AABC&quot;, &quot;ADFE&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test02Sample() = testEvaluation(&quot;AABC&quot;, &quot;ADFA&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test03Sample() = testEvaluation(&quot;AABC&quot;, &quot;DFAA&quot;, 0, 2)&#10;&#10;    @Test&#10;    fun test04Sample() = testEvaluation(&quot;AABC&quot;, &quot;DEFA&quot;, 0, 1)&#10;&#10;    @Test&#10;    fun test05() = testEvaluation(&quot;ABCD&quot;, &quot;EAAA&quot;, 0, 1)&#10;&#10;    @Test&#10;    fun test06() = testEvaluation(&quot;AABC&quot;, &quot;ADFA&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test07() = testEvaluation(&quot;AABC&quot;, &quot;DEFA&quot;, 0, 1)&#10;&#10;    @Test&#10;    fun test08() = testEvaluation(&quot;EDEB&quot;, &quot;CBFE&quot;, 0, 2)&#10;&#10;    @Test&#10;    fun test09() = testEvaluation(&quot;CFDF&quot;, &quot;FCCD&quot;, 0, 3)&#10;&#10;    @Test&#10;    fun test10() = testEvaluation(&quot;AABC&quot;, &quot;AEFD&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test11() = testEvaluation(&quot;DCFC&quot;, &quot;ABEC&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test12() = testEvaluation(&quot;FDCD&quot;, &quot;FBAD&quot;, 2, 0)&#10;&#10;    @Test&#10;    fun test13() = testEvaluation(&quot;DEFA&quot;, &quot;AABC&quot;, 0, 1)&#10;&#10;    @Test&#10;    fun test14() = testEvaluation(&quot;DAAE&quot;, &quot;AABC&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test15() = testEvaluation(&quot;BBDC&quot;, &quot;DFBB&quot;, 0, 3)&#10;&#10;    @Test&#10;    fun test16() = testEvaluation(&quot;DBFF&quot;, &quot;FFDD&quot;, 0, 3)&#10;&#10;    @Test&#10;    fun test17() = testEvaluation(&quot;BDAD&quot;, &quot;AAAE&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test18() = testEvaluation(&quot;FDDB&quot;, &quot;CABB&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test19() = testEvaluation(&quot;BDBC&quot;, &quot;DDFC&quot;, 2, 0)&#10;&#10;    @Test&#10;    fun test20() = testEvaluation(&quot;ECDE&quot;, &quot;CEEE&quot;, 1, 2)&#10;&#10;    @Test&#10;    fun test21() = testEvaluation(&quot;AAAF&quot;, &quot;ABCA&quot;, 1, 1)&#10;&#10;    @Test&#10;    fun test22() = testEvaluation(&quot;BCDA&quot;, &quot;AFEA&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test23() = testEvaluation(&quot;EEEE&quot;, &quot;AFEA&quot;, 1, 0)&#10;&#10;    @Test&#10;    fun test24() = testEvaluation(&quot;EEBE&quot;, &quot;AFEA&quot;, 0, 1)&#10;&#10;    @Test&#10;    fun test25() = testEvaluation(&quot;EEAD&quot;, &quot;EEEE&quot;, 2, 0)&#10;&#10;    @Test&#10;    fun test26() = testEvaluation(&quot;BACD&quot;, &quot;EAFF&quot;, 1, 0)&#10;}&#10;" />
+                        </map>
+                      </option>
+                      <option name="updateDate" value="0" />
+                    </EduTask>
+                  </list>
+                </option>
+                <option name="unitId" value="0" />
+              </Lesson>
+            </list>
+          </option>
+        </Course>
+      </option>
+    </StudyTaskManager>
+  </component>
+</project>

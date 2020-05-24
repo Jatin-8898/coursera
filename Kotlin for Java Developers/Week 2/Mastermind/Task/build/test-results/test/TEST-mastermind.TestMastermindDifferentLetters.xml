@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mastermind.TestMastermindDifferentLetters" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-04-20T18:53:17" hostname="Jatin" time="0.025">
+  <properties/>
+  <testcase name="test01SampleEqual" classname="mastermind.TestMastermindDifferentLetters" time="0.02"/>
+  <testcase name="test02SampleOnlyWrongPositions" classname="mastermind.TestMastermindDifferentLetters" time="0.0"/>
+  <testcase name="test03SampleSwap" classname="mastermind.TestMastermindDifferentLetters" time="0.0"/>
+  <testcase name="test04RightPositions" classname="mastermind.TestMastermindDifferentLetters" time="0.0"/>
+  <testcase name="test05WrongPositions" classname="mastermind.TestMastermindDifferentLetters" time="0.0"/>
+  <testcase name="test06BothRightAndWrong" classname="mastermind.TestMastermindDifferentLetters" time="0.0"/>
+  <testcase name="test07" classname="mastermind.TestMastermindDifferentLetters" time="0.0"/>
+  <testcase name="test08" classname="mastermind.TestMastermindDifferentLetters" time="0.0"/>
+  <testcase name="test09" classname="mastermind.TestMastermindDifferentLetters" time="0.001"/>
+  <testcase name="test10" classname="mastermind.TestMastermindDifferentLetters" time="0.0"/>
+  <testcase name="test11" classname="mastermind.TestMastermindDifferentLetters" time="0.0"/>
+  <testcase name="test12" classname="mastermind.TestMastermindDifferentLetters" time="0.0"/>
+  <testcase name="test13" classname="mastermind.TestMastermindDifferentLetters" time="0.0"/>
+  <testcase name="test14" classname="mastermind.TestMastermindDifferentLetters" time="0.0"/>
+  <testcase name="test15" classname="mastermind.TestMastermindDifferentLetters" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

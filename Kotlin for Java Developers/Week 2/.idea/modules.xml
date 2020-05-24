@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Kotlin_for_Java_Developers._Week_2.iml" filepath="$PROJECT_DIR$/.idea/Kotlin_for_Java_Developers._Week_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mastermind/Task/Mastermind-Task.iml" filepath="$PROJECT_DIR$/.idea/modules/Mastermind/Task/Mastermind-Task.iml" group="Mastermind-Task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mastermind/Task/Mastermind-Task_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Mastermind/Task/Mastermind-Task_main.iml" group="Mastermind-Task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mastermind/Task/Mastermind-Task_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Mastermind/Task/Mastermind-Task_test.iml" group="Mastermind-Task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util.iml" group="util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" group="util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" group="util" />
+    </modules>
+  </component>
+</project>

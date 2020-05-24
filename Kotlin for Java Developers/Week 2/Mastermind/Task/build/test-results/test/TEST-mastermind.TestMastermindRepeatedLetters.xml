@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mastermind.TestMastermindRepeatedLetters" tests="26" skipped="0" failures="0" errors="0" timestamp="2020-04-20T18:53:17" hostname="Jatin" time="0.015">
+  <properties/>
+  <testcase name="test01Sample" classname="mastermind.TestMastermindRepeatedLetters" time="0.002"/>
+  <testcase name="test02Sample" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test03Sample" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test04Sample" classname="mastermind.TestMastermindRepeatedLetters" time="0.001"/>
+  <testcase name="test05" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test06" classname="mastermind.TestMastermindRepeatedLetters" time="0.001"/>
+  <testcase name="test07" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test08" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test09" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test10" classname="mastermind.TestMastermindRepeatedLetters" time="0.001"/>
+  <testcase name="test11" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test12" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test13" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test14" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test15" classname="mastermind.TestMastermindRepeatedLetters" time="0.001"/>
+  <testcase name="test16" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test17" classname="mastermind.TestMastermindRepeatedLetters" time="0.001"/>
+  <testcase name="test18" classname="mastermind.TestMastermindRepeatedLetters" time="0.001"/>
+  <testcase name="test19" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test20" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test21" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test22" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test23" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test24" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test25" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <testcase name="test26" classname="mastermind.TestMastermindRepeatedLetters" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
